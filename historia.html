@@ -1,0 +1,31 @@
+
+<html><head><style>
+body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(180deg,#fff0f5,#ffe4e1);color:#6b2144;overflow-x:hidden}
+nav{background:#c2185b;padding:15px;text-align:center}
+nav a{color:white;text-decoration:none;margin:0 15px;font-weight:bold}
+.container{max-width:1100px;margin:auto;padding:40px 20px}
+.card{background:white;padding:30px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.1)}
+h1,h2{text-align:center;color:#c2185b}
+.particle{position:fixed;top:-20px;animation:fall linear infinite;color:#ff4d88}
+@keyframes fall{to{transform:translateY(110vh)}}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.gallery img{width:100%;height:350px;object-fit:cover;border-radius:20px}
+</style></head><body><nav><a href="index.html">Início</a><a href="historia.html">Nossa História</a><a href="galeria.html">Galeria</a><a href="trilha.html">Trilha Sonora</a></nav>
+<div class='container'><div class='card'>
+<h1>Nossa História</h1>
+<h3>10/02/2025</h3><p>O início da nossa jornada.</p>
+<h3>Primeiros Momentos</h3><p>Cada conversa aproximou nossos corações.</p>
+<h3>Hoje</h3><p>Seguimos construindo sonhos juntos.</p>
+<h3>Futuro</h3><p>Que essa história nunca tenha fim.</p>
+</div></div>
+<script>
+for(let i=0;i<40;i++){
+let h=document.createElement('div');
+h.className='particle';
+h.innerHTML='❤';
+h.style.left=Math.random()*100+'vw';
+h.style.animationDuration=(5+Math.random()*10)+'s';
+document.body.appendChild(h);
+}
+</script>
+</body></html>
