@@ -19,6 +19,20 @@ h1,h2{text-align:center;color:#c2185b}
 </audio>
 <p>A música escolhida para servir de trilha sonora do nosso novo ciclo de namorado.</p>
 </div></div>
+
+<button onclick="iniciarMusica()" class="btn-romantico">
+    💖 Clique para ouvir nossa música
+</button>
+
+<audio id="musica">
+    <source src="Esperando na Janela.mp3" type="audio/mp3">
+</audio>
+
+<script>
+function iniciarMusica() {
+    document.getElementById('musica').play();
+}
+</script>
 <script>
 for(let i=0;i<40;i++){
 let h=document.createElement('div');
