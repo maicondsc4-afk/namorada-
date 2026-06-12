@@ -1,2 +1,275 @@
-<html> <head> <style> body{ margin:0; font-family:Arial,sans-serif; background:linear-gradient(180deg,#fff0f5,#ffe4e1); color:#6b2144; overflow-x:hidden } nav{ background:#c2185b; padding:15px; text-align:center } nav a{ color:white; text-decoration:none; margin:0 15px; font-weight:bold } .container{ max-width:1100px; margin:auto; padding:40px 20px } .card{ background:white; padding:30px; border-radius:20px; box-shadow:0 10px 25px rgba(0,0,0,.1) } h1,h2{ text-align:center; color:#c2185b } .particle{ position:fixed; top:-20px; animation:fall linear infinite; color:#ff4d88 } @keyframes fall{ to{ transform:translateY(110vh) } } .audio-container{ text-align:center; margin:30px 0; } audio{ width:100%; max-width:600px; } .mensagem{ text-align:center; font-size:18px; line-height:1.8; } </style> </head> <body> <nav> <a href="index.html">Início</a> <a href="historia.html">Nossa História</a> <a href="galeria.html">Galeria</a> <a href="trilha.html">Trilha Sonora</a> </nav> <div class="container"> <div class="card"> <h1>Nossa Trilha Sonora 🎵</h1> <p style="text-align:center;font-size:22px;font-weight:bold;"> Esperando na Janela ❤️ </p> <div class="audio-container"> <audio controls> <source src="esperando-na-janela.mp3" type="audio/mpeg"> Seu navegador não suporta áudio. </audio> </div> <p class="mensagem"> Essa música representa um pedacinho da nossa história, dos nossos momentos juntos e de tudo que ainda vamos viver. Sempre que ela tocar, vou lembrar do quanto você é especial para mim. ❤️ </p> </div> </div> <script> for(let i=0;i<40;i++){ let h=document.createElement('div'); h.className='particle'; h.innerHTML='❤'; h.style.left=Math.random()*100+'vw'; h.style.animationDuration=(5+Math.random()*10)+'s'; document.body.appendChild(h); } </script> </body> </html>
+<html>
+<head>
+<meta charset="UTF-8">
 
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(180deg,#1a1a1a,#121212);
+    color:white;
+    overflow-x:hidden;
+}
+
+
+/* MENU */
+nav{
+    background:#000;
+    padding:18px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#1db954;
+}
+
+
+/* CONTAINER */
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+
+/* CARD SPOTIFY */
+.spotify-card{
+
+    background:linear-gradient(145deg,#282828,#181818);
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 20px 50px rgba(0,0,0,.7);
+
+}
+
+
+/* CAPA */
+.album{
+
+    text-align:center;
+
+}
+
+.album img{
+
+    width:320px;
+    height:320px;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow:0 10px 30px black;
+
+}
+
+
+h1{
+
+    font-size:38px;
+    margin-top:30px;
+
+}
+
+
+.artista{
+
+    color:#b3b3b3;
+    font-size:18px;
+
+}
+
+
+/* PLAYER */
+
+.player{
+
+    margin-top:40px;
+
+}
+
+
+audio{
+
+    width:100%;
+
+}
+
+
+
+/* TEXTO */
+
+.mensagem{
+
+    margin-top:35px;
+    text-align:center;
+    color:#ddd;
+    font-size:18px;
+    line-height:1.8;
+
+}
+
+
+/* CORAÇÕES */
+
+.particle{
+
+position:fixed;
+top:-20px;
+color:#1db954;
+animation:fall linear infinite;
+
+}
+
+
+@keyframes fall{
+
+to{
+transform:translateY(110vh);
+}
+
+}
+
+
+/* BOTÃO */
+
+.spotify-btn{
+
+display:inline-block;
+margin-top:25px;
+background:#1db954;
+color:white;
+padding:14px 35px;
+border-radius:30px;
+font-weight:bold;
+text-decoration:none;
+
+}
+
+
+.spotify-btn:hover{
+
+background:#1ed760;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<nav>
+
+<a href="index.html">Início</a>
+<a href="historia.html">Nossa História</a>
+<a href="galeria.html">Galeria</a>
+<a href="trilha.html">Trilha Sonora</a>
+
+</nav>
+
+
+
+<div class="container">
+
+
+<div class="spotify-card">
+
+
+<div class="album">
+
+
+<img src="capa-musica.jpg" alt="Capa da música">
+
+
+<h1>Esperando na Janela ❤️</h1>
+
+
+<p class="artista">
+Douglas & Mikelly • Nossa História
+</p>
+
+
+
+<div class="player">
+
+
+<audio controls>
+
+<source src="esperando-na-janela.mp3" type="audio/mpeg">
+
+Seu navegador não suporta áudio.
+
+</audio>
+
+
+</div>
+
+
+
+<a class="spotify-btn">
+▶ Tocando nossa história
+</a>
+
+
+
+</div>
+
+
+
+<p class="mensagem">
+
+Essa música virou parte da nossa história.  
+Cada verso lembra os momentos que vivemos, as conversas de madrugada, os sorrisos e todos os sonhos que ainda vamos construir juntos.
+
+<br><br>
+
+Assim como uma música nunca é esquecida quando marca um momento especial, você também ficou marcada no meu coração. ❤️
+
+</p>
+
+
+
+</div>
+
+
+</div>
+
+
+
+<script>
+
+for(let i=0;i<40;i++){
+
+let h=document.createElement('div');
+
+h.className='particle';
+
+h.innerHTML='❤';
+
+h.style.left=Math.random()*100+'vw';
+
+h.style.animationDuration=(5+Math.random()*10)+'s';
+
+document.body.appendChild(h);
+
+}
+
+
+</script>
+
+
+</body>
+</html>
